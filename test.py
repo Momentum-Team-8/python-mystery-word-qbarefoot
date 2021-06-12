@@ -5,9 +5,7 @@ name = input("Input Name?\n")
 def run():
 
   print(f"Hello, {name}, let's play!")
-
   print("Go!")
-
 
   with open("words.txt") as f:
     Game = f.read().split()
@@ -25,7 +23,6 @@ def run():
     for char in word:
 
       if char in guesses:
-
         print(char)
 
       else:
@@ -35,17 +32,11 @@ def run():
         failed += 1
 
     if failed == 0:
-
       print("Winner!")
-
       choice = input("Play Again? y/n\n")
-
       if "y" in choice:
-
         run()
-
       elif "n" in choice:
-
         sys.exit()
 
       else:
@@ -61,23 +52,16 @@ def run():
       turns -= 1
 
       print("Wrong!")
-
       print(f"You have {turns} more guesses.")
 
       if turns == 0:
-
-        print("You Lose!")
-
+        print("Loser!")
         choice = input("Play Again? y/n\n")
-
         if "y" in choice:
-
           run()
-
         elif "n" in choice:
-
           sys.exit()
-
+          
         else:
 
           print("Something went wrong, type y or n.")
