@@ -4,7 +4,7 @@ name = input("Input Name?\n")
 
 def run():
 
-  print(f"Hello, {name}, let's play!")
+  print(f"Hello, {name}, Let's Play!")
   print("Go!")
 
   with open("words.txt") as f:
@@ -33,7 +33,7 @@ def run():
 
     if failed == 0:
       print("Winner!")
-      choice = input("Play Again? y/n\n")
+      choice = input("Play Again? y/n")
       if "y" in choice:
         run()
       elif "n" in choice:
@@ -56,7 +56,7 @@ def run():
 
       if turns == 0:
         print("Loser!")
-        choice = input("Play Again? y/n\n")
+        choice = input("Play Again? y/n")
         if "y" in choice:
           run()
         elif "n" in choice:
