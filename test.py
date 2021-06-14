@@ -33,7 +33,7 @@ def run():
 
     if failed == 0:
       print("Winner!")
-      choice = input("Play Again? y/n")
+      choice = input("Play Again? y/n\n")
       if "y" in choice:
         run()
       elif "n" in choice:
@@ -56,7 +56,7 @@ def run():
 
       if turns == 0:
         print("Loser!")
-        choice = input("Play Again? y/n")
+        choice = input("Play Again? y/n\n")
         if "y" in choice:
           run()
         elif "n" in choice:
